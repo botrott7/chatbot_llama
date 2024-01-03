@@ -1,5 +1,5 @@
 # chatbot_llama 
-## "ChatBot на основе модели LLaMA с использованием FastAPI"
+## ChatBot на основе модели LLaMA с использованием FastAPI
 
 ## Описание проекта
 
@@ -16,7 +16,7 @@
 
 - Python 3.7+
 - Установленные зависимости из файла requirements.txt
-- Модель обучения LLaMA model-q8_01.gguf
+- Модель обучения [LLaMA model](https://huggingface.co/IlyaGusev/saiga_mistral_7b_gguf/blob/main/model-q8_0.gguf)
 
 ## Использование проекта
 
