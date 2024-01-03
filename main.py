@@ -1,3 +1,4 @@
+import re
 import os
 
 from llama_cpp import Llama
@@ -38,7 +39,7 @@ async def message_AI(question: Question):
         logger.debug(f'Получен ВОПРОС: {question}')
         output = LLM(question.question, max_tokens=2024, echo=False)
         # result = re.search(r'(?<=bot\s)(.*)', output).group(1)
-        result = output["choices"][0]["text"].strip()
+        result = output["choices"][0]["text"].replace("bot:", "").strip()
         logger.debug(f'Получен ОТВЕТ: {result[:100]}')
         return {"result": result}
     except Exception as e:
